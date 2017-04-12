@@ -6,9 +6,9 @@
 #install apached package
 
 if node['platform_family'] == "rhel"
-	package = httpd
+	package = 'httpd'
 elsif node['platform_family'] == "debian"
-	package = httpd2
+	package = 'httpd2'
 end
 
 package 'apache2' do
